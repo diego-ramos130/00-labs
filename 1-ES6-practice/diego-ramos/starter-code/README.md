@@ -23,9 +23,12 @@ Follow these instructions carefully and in order.
 ##### Investigate how `let` and `const` are now used in the code. Where did you need to convert `const` into `let` to make the code work? Can you identify any patterns/similarities?
 
 (Put your answer here)
+Basically, I need to convert const into let at any point which the const would be assigned, but not appended to. I'm guessing all of my arrays can stay as consts because they're still semantically never changed, but only the contents of what it holds changes. If an array is assigned, the semantic meaning of that array is now changed to represent something else, in this case being the previous set of data, or a counter variable.
 
 ---
 
 ##### How did it go with making the adaptation from concatenations to template literal notation? Do you think you'll mostly use template literal notation from now on?
 
 (Put your answer here)
+Adapting to template literal notation is painless and easy. The only thing I got caught on was using backticks. Otherwise, it was really easy and I think I'm going to use it a lot more from now on.
+
